@@ -1,11 +1,11 @@
-FROM docker.pkg.github.com/youssefgh/docker-openjdk/openjdk:11.0.4_p4-r1
+FROM docker.pkg.github.com/youssefgh/docker-openjdk/openjdk:11.0.7_p10-r1
 
 LABEL maintainer="Youssef GHOUBACH <ghoubach.youssef@gmail.com>"
 
 RUN apk add --update \
     curl
 
-ENV VERSION 2.11.0
+ENV VERSION 2.14.0
 
 ENV PACKAGE_NAME apache-artemis-$VERSION-bin
 
